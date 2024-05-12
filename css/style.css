@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+/*
+font-family: "Silkscreen", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+*/
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Silkscreen", sans-serif;
+}
+.engloba-conteudo,.registro{
+    width: 100vw;
+    height: 100vh;
+    background: palegreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content:center;
+}
+
+.engloba-conteudo, .registro{
+    background-image: url(../images/fundo.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.conteudo{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+form img{
+    width: 200px;
+}
+
+form{
+    background: rgba(0, 0, 0, 0.521);
+    padding: 30px;
+    border-radius: 20px;
+    backdrop-filter: blur(2px);
+    border: 2px solid green;
+}
+
+.conteudo{
+   text-align: center;
+}
+.conteudo h1{
+    color: white;
+    
+ }
+
+ .input-box input{
+    padding: 10px;
+    margin:10px 0 10px 0;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 20px;
+    color: white;
+ }
+
+ .input-box input::-webkit-input-placeholder {
+    color: white;
+ }
+ .input-box i{
+    color: white;
+    margin-left: 10px;
+    font-size: 20px;
+ }
+ .relembrar {
+    display: flex;
+    gap:30px;
+ }
+ .relembrar label{
+    color: white;
+ }
+ .relembrar a{
+    color: blue;
+    text-decoration: none;
+ }
+
+ .relembrar input{
+    border: 0;
+    color: black;
+ }
+
+ .btn{
+    font-size: 30px;
+    padding: 0 50px 0 50px;
+    border-radius: 20px;
+    border: 0;
+    cursor: pointer;
+    margin: 10px 0 10px 0;
+    transition: 1s;
+ }
+ .btn:hover{
+    background: green;
+    color: white;
+ }
+
+ .registre-se p{
+    color: white;
+
+ }

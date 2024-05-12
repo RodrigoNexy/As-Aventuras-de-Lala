@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+/*
+font-family: "Silkscreen", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+*/
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Silkscreen", sans-serif;
+}
+
+body{
+    background-image: url(../images/fundo.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+.menu {
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-content: center;
+    flex-direction: row;
+}
+
+.menu a{
+    background: green;
+    padding: 5px 30px 5px 30px;
+    border: 2px solid white;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: .6s;
+}
+
+.menu a:hover,.menu a p:hover{
+    background: white;
+    color: green !important;
+}
+
+.menu a p:hover{
+    color: green !important;
+}
+
+.menu img{
+    width: 100px;
+}
+
+.titulo-site{
+    background: rgba(0, 0, 0, 0.363);
+    border-radius: 0 0 50px 50px;
+    padding-bottom: 10px;
+    text-align: center;
+    border-bottom: 3px solid green;
+}
+
+.titulo-site h1, .titulo-site p{
+    color: white;
+}
+.busca{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.grid-jogos{
+    display: grid;
+    width: 100%;
+    gap: 20px;
+    justify-items: center;
+    padding: 0 200px 0 200px;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.jogos img{
+    width: 150px;
+}
+
+.jogos{
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px solid green;
+    background: rgba(0, 0, 0, 0.493);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.jogos h3{
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+}
+
+.jogos p{
+    color: white;
+}
+.jogos button{
+    margin-top: 20px;
+    padding: 10px 20px 10px 20px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.jogos button{
+    color: white;
+    transition: .6s;
+}
+
+.jogos button:hover{
+    color: white;
+    background-color: green;
+}
+
+.jogos button p{
+    font-size: 20px;
+}
+
+.busca input{
+    padding: 5px;
+    background: rgba(0, 0, 0, 0.61);
+    border: 2px solid green;
+    border-radius: 20px;
+    color: white;
+}
+
+.busca input::placeholder{
+    color: white;
+}
+
+.busca{display: flex;
+justify-content: center;
+align-items: center;
+gap: 20px;
+}
+
+.busca i{
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.61);
+    border: 2px solid green;
+    border-radius: 20px;
+    color: white;
+}
