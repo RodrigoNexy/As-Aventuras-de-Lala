@@ -12,11 +12,15 @@ font-family: "Silkscreen", sans-serif;
     font-family: "Silkscreen", sans-serif;
 }
 body{
+    background-image: url(../images/fundo2.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
-    height: 100vh;
 }
 .game-board{
     background:linear-gradient(#1891c9,#9ae7fa);
