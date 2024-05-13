@@ -11,7 +11,13 @@ font-family: "Silkscreen", sans-serif;
     box-sizing: border-box;
     font-family: "Silkscreen", sans-serif;
 }
-
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
 .game-board{
     background:linear-gradient(#1891c9,#9ae7fa);
     width: 80%;
@@ -44,6 +50,25 @@ font-family: "Silkscreen", sans-serif;
     width: 550px;
     position: absolute;
     animation: animacao-nuvem 10s infinite linear;
+}
+.over{
+    display: none;
+   text-align: center;
+   margin-top: 20%;
+}
+
+.over2{
+    display: none;
+    text-align: center;
+}
+
+.over2 button{
+    padding: 10px 10px 10px 10px;
+    border: 4px solid black;
+    background: transparent;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
 }
 
 @keyframes animacao-nuvem{

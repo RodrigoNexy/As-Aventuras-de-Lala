@@ -1,5 +1,7 @@
 const lala= document.querySelector('.lala');
 const obstaculo = document.querySelector('.obstaculo')
+const gameover = document.querySelector('.over');
+const gameover2 = document.querySelector('.over2');
 
 const jump = () =>{
 lala.classList.add('jump');
@@ -22,6 +24,9 @@ const loop = setInterval(() => {
 
             lala.src = './images/logo.png';
             lala.style.width = '120px';
+
+            gameover.style.display ='block';
+            gameover2.style.display ='block';
 
             clearInterval(loop);
         }
