@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quer ir pra cartinha?</title>
+</head>
+
+<body>
+    <div id="conteudo">
+        <h2>Esta Preparada para ler a cartinha?</h2>
+        <div style="margin: auto;width: 170px;">
+            <button style="position: fixed;display: block;" class="btn" onclick="sim()">Não</button>
+            <button class="btn" onclick="desvia(this)" onmouseover="desvia(this)" style="position: absolute;">SIM</button>
+        </div>
+    </div>
+</body>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+/*
+font-family: "Silkscreen", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+*/
+
+.btn{
+    cursor: pointer;
+}
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Silkscreen", sans-serif;
+}
+    #conteudo {
+        background-image: url(/images/fundo2.webp);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 10px;
+        text-align: center;
+        font-family: sans-serif;
+    }
+
+    #conteudo h2{
+        background-color: rgba(0, 0, 0, 0.637);
+        margin-top: 20%;
+        color: white;
+        padding: 20px 0 20px 0;
+    }
+
+    .btn {
+        background: black;
+        color: white;
+        border: none;
+        padding: 10px;
+        width: 80px;
+        border-radius: 5px;
+    }
+</style>
+
+<script>
+    function sim() {
+        alert("Então vamos lá :)");
+        // redireciona para um URL após clicar no SIM
+        location.href = "/desafio/cartinha.html";
+    }
+
+    function desvia(btn) {
+        // btn declarado na função
+        btn.style.position = 'absolute';
+        btn.style.bottom = geraPosicao(10, 90);
+        btn.style.left = geraPosicao(10, 90);
+        console.log('opa, desviei...');
+    }
+
+    function geraPosicao(min, max) {
+        return (Math.random() * (max - min) + min) + "%";
+    }
+
+    setTimeout(() => {
+        alert("Ta bom, de tentar clicar no sim, é impossivel, clique no não 😂");
+    }, 30000); // 30000 milissegundos equivalem a 30 segundos
+</script>
+
+</html>

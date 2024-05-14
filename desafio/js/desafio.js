@@ -21,7 +21,7 @@ const jump = () => {
 const checkJumpSuccess = () => {
     if (jumpCount >= 10) {
         window.alert('Parabéns amor você conseguiu, vamos ao proximo desafio')
-        window.location.href = 'nova_pagina.html'; // Redireciona para outra página
+        window.location.href = '/desafio/quiz.html'; // Redireciona para outra página
     }
 }
 

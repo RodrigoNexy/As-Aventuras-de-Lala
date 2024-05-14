@@ -113,7 +113,7 @@ let perguntas = [
             this.Atualpos++;
             if(this.Atualpos == perguntas.length){
                 if(this.Totalpontos == 11){
-                    location.href = "/duwdwm/duwdwm.html";
+                    location.href = "/desafio/meme.html";
                 }else{
                     alert(`Tente novamente! Você errou um total de: ${this.Erros}`);
                     location.href = "/desafio/quiz.html";
