@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(38,38,38,1) 100%);
+}
+
+.engloba-conteudo{
+    flex-direction: column;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.carta{
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 20px;
+    background-image: url(/images/papel.png);
+    width: 80%;
+}
+
+.video-box{
+    text-align: center;
+}
+
+.video1{
+    height: 500px;
+}
+
+.card-musica{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.foto{
+    text-align: center;
+}
+
+.foto img{
+    width: 300px;
+}
+
+.foto h1{
+    font-size: 20px;
+}
+
+.card-musica{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background: white;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0px 10px 20px black;
+}
+
+.carta h2{
+    margin-top: 60px;
+}
+
+.botao-revelar{
+    text-align: center;
+}
+
+.botao-revelar button{
+    padding: 20px;
+    border-radius: 10px;
+    border: 0;
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+
+

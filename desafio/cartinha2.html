@@ -1,12 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/desafio/css/cartinha2.css">
-    <title>Document</title>
+    <title>Cartinha do meu amor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <style>
+        .oculto {
+            display: none;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="engloba-conteudo">
+        <div class="card-musica">
+            <h1>Eu te amo!</h1>
+            <div class="foto">
+                <img src="/images/eu e ela.webp" alt="">
+                <h1>Dedico essa musica pra você!</h1>
+            </div>
+            <div class="card">
+                <audio src="/images/Cheirosa.mp3" controls></audio>
+            </div>
+        </div>
+        <div class="carta">
+            <div class="botao-revelar">
+                <button id="revealButton">Mostrar Carta</button>
+            </div>
+            <div class="oculto" id="ocultoContent">
+                <h2 data-aos="fade-up">Querida Larissa</h2><br>
+                <p data-aos="fade-up">Desde o primeiro momento em que esbarrei em você lá na igreja, eu diria que aconteceu algo mágico kkkk, algo que eu diria que foi paixão à primeira vista, e você sabe bem disso.<br><br> Falei várias vezes sobre isso. Cada dia que passa ao seu lado só confirma o quanto eu sou sortudo por ter te encontrado, e cada dia mais meu amor cresce por você.</p><br>
+                <p data-aos="fade-up">Quero que saiba que te amo demais. Seu sorriso ilumina meus dias e seu carinho aquece meu coração (bem clichê kkkkk).<br><br> Não importa o que aconteça, eu sempre estarei aqui para você, te apoiando e te amando com toda a minha força. Eu sou eternamente grato por cada momento juntos, por cada risada, por cada abraço que me faz sentir em casa.</p>
+                <div class="video-box" data-aos="fade-up">
+                    <video class="video1" src="/images/video1.mp4" loop muted autoplay></video>
+                </div>    
+                <p data-aos="fade-up">Você é mais que uma namorada pra mim, você é minha parceira, minha melhor amiga, meu tudo. Eu sou muito apaixonado por você, e é impossível expressar em palavras o tamanho do meu amor. <br><br> Você é a melhor coisa que já me aconteceu, e eu mal posso esperar para viver todas essas aventuras ao seu lado. Que este novo ano de vida traga ainda mais alegria, amor e realizações para você.</p><br>
+                <p data-aos="fade-up">Parabéns, meu amor. Eu te amo mais do que palavras podem expressar.</p><br>
+                <p data-aos="fade-up">Não sou bom com palavras e muito menos escrevendo cartas kkkk, sei que é pouco, mas é de coração.</p><br>
+                <p data-aos="fade-up">Com todo o meu amor,</p><br>
+                <h3 data-aos="fade-up">Rodrigo</h3>
+                <div class="video-box" data-aos="fade-up">
+                    <video class="video1" src="/images/video2.mp4" loop muted autoplay></video>
+                </div>
+            </div>         
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('revealButton').addEventListener('click', function() {
+            var ocultoContent = document.getElementById('ocultoContent');
+            if (ocultoContent.style.display === 'none' || ocultoContent.style.display === '') {
+                ocultoContent.style.display = 'block';
+                AOS.refresh();  // Re-initialize AOS to animate revealed content
+            } else {
+                ocultoContent.style.display = 'none';
+            }
+        });
+        AOS.init();
+    </script>
 </body>
 </html>
